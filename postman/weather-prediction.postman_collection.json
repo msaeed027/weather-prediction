@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "dcc5e5bd-6020-488e-b1ee-b18585753b14",
+		"name": "weather-prediction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get weather",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/weather?city=asd&date=2019-11-28&scale=Fahrenheit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "asd"
+						},
+						{
+							"key": "date",
+							"value": "2019-11-28"
+						},
+						{
+							"key": "scale",
+							"value": "Fahrenheit"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get weather example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/weather?city=asd&date=2019-11-28&scale=Fahrenheit",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "asd"
+								},
+								{
+									"key": "date",
+									"value": "2019-11-28"
+								},
+								{
+									"key": "scale",
+									"value": "Fahrenheit"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8080"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2019 05:38:32 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2019 05:38:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.5"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"scale\": \"Fahrenheit\",\n    \"city\": \"asd\",\n    \"date\": \"2019-11-28\",\n    \"predictions\": {\n        \"00:00\": 37.4,\n        \"01:00\": 37.4,\n        \"02:00\": 37.4,\n        \"03:00\": 35.6,\n        \"04:00\": 37.4,\n        \"05:00\": 33.8,\n        \"06:00\": 46.4,\n        \"07:00\": 28.4,\n        \"08:00\": 30.2,\n        \"09:00\": 32,\n        \"10:00\": 33.8\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
